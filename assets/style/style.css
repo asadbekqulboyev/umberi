@@ -534,10 +534,9 @@ body {
   width: 100%;
   max-height: 96px;
   background-image: var(--answer-bg-image);
-  background-size: 100% 100%;
-  background-position: center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: transparent;
   outline: 0;
   border: 0;
@@ -564,16 +563,6 @@ body {
   text-shadow: -1px 1px 4px rgba(0, 0, 0, 0.85);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #B9AA00;
-}
-
-.answer-button::after {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border-radius: 12px;
-  border: 1px solid rgba(198, 210, 235, 0.2);
-  pointer-events: none;
-  z-index: 2;
 }
 
 .answer-button__flag {
@@ -643,10 +632,7 @@ body {
   transform: translateY(-2px);
 }
 
-.answer-button--active {
-  filter: brightness(1.15);
-  transform: translateY(-2px);
-}
+.answer-button--active {}
 
 .answer-button--correct {
   border-color: rgba(120, 243, 190, 0.62);
@@ -657,18 +643,9 @@ body {
 }
 
 .answer-button--disabled {
-  opacity: 0.9;
-  filter: grayscale(0);
-  transform: none;
+  opacity: 0.7;
 }
 
-.answer-button--selected {
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.42),
-    inset 0 -1px 0 rgba(5, 10, 18, 0.41),
-    0 0 0 1px rgba(255, 255, 255, 0.22),
-    0 8px 14px rgba(5, 10, 20, 0.42);
-}
 
 .answer-button:disabled {
   cursor: default;
