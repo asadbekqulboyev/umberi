@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Умбери | Тестовая верстка</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/style/style.css" />
+</head>
+
+<body >
+  <div class="quiz-screen" data-screen="country-quiz" data-correct-public-id="0jap-C4Zb2-nXga"
+    data-question-label="Демократическая Республика Конго">
+    <img class="quiz-screen__background" src="assets/images/fon.png" alt="" aria-hidden="true" />
+
+    <header class="header" role="banner">
+      <div class="header__brand">
+        <a class="header__logo" href="#" aria-label="На главную">
+          <img class="quiz-logo__image" src="assets/images/logo.svg" alt="Умбери" />
+        </a>
+        <nav class="header__navigation" aria-label="Главное меню">
+          <ul class="header__menu menu">
+            <li class="menu__item"><a class="menu__link" href="#">Тренажеры</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Тренировки</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Создать тренажер</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="header__actions" aria-label="Пользовательские действия">
+        <a href="#" class="icon-button icon-button--bell" type="button" aria-label="Уведомления">
+          <img class="icon-button__image" src="assets/images/notification.svg" alt="" aria-hidden="true" />
+        </a>
+        <a href="#" class="icon-button icon-button--profile" type="button" aria-label="Профиль">
+          <img class="icon-button__image" src="assets/images/user_icon.svg" alt="" aria-hidden="true" />
+        </a>
+      </div>
+    </header>
+
+    <main class="quiz-layout" role="main">
+      <aside class="quiz-sidebar" aria-label="Информационная панель">
+        <div class="quiz-question-card" aria-label="Логотип раздела">
+          <div class="quiz_left">
+            <img class="quiz-question-card__badge" src="assets/images/sidebar_logo.png" />
+          </div>
+        </div>
+        <section class="quiz-metrics" aria-label="Показатели">
+          <ul class="quiz-metrics__list">
+            <li class="quiz-metrics__item">
+              <span class="quiz-metrics__label"><img src="assets/images/sidebar_icon1.svg" alt=""></span>
+              <span class="quiz-metrics__value">1407</span>
+            </li>
+            <li class="quiz-metrics__item">
+              <span class="quiz-metrics__label"><img src="assets/images/sidebar_icon2.svg" alt=""></span>
+              <span class="quiz-metrics__value">136</span>
+            </li>
+            <li class="quiz-metrics__item">
+              <span class="quiz-metrics__label"><img src="assets/images/sidebar_icon3.svg" alt=""></span>
+              <span class="quiz-metrics__value">100</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="quiz-sidebar-controls" aria-label="Дополнительные действия">
+          <a href="#" class="sidebar_btn"><img src="assets/images/sibebar_bottom_img1.svg" alt=""></a>
+          <a href="#" class="sidebar_btn"><img src="assets/images/sibebar_bottom_img2.svg" alt=""></a>
+        </section>
+      </aside>
+
+      <section class="quiz-main-panel" aria-label="Игровая зона">
+        <div class="quiz-map" aria-label="Карта мира">
+          <img class="quiz-map__image" src="assets/images/map.png" alt="Карта мира" />
+        </div>
+        <img src="assets/images/content_blog.png" alt="" class="quiz-content-image" aria-hidden="true" />
+        <section class="quiz-answers" aria-labelledby="answersTitle">
+          <h2 class="quiz-answers__title" id="answersTitle">Выберите правильный ответ</h2>
+          <p class="quiz-answers__status" id="answerStatus" aria-live="polite"></p>
+          <div class="quiz-answers__grid answer-grid" id="answerGrid" role="listbox" aria-label="Варианты ответа"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
